@@ -29,10 +29,18 @@ export default async function Page({ params }: Params) {
           <div className="uppercase tracking-wide text-sm text-orange-500 font-semibold">
             Personal Info
           </div>
-          <div>Name: {params.name}</div>
-          <div>Gender: {gender?.gender}</div>
-          <div>Country: {country?.country[0].country_id} {}</div>
-          <div>Occurencies: {gender?.count}</div>
+          <div className="block mt-1 text-lg leading-tight font-medium text-black">
+            Name: {params.name}
+          </div>
+          <div className="block mt-1 text-lg leading-tight font-medium text-black">
+            Gender: {gender?.gender}
+          </div>
+          <div className="block mt-1 text-lg leading-tight font-medium text-black">
+            Country: {country?.country[0].country_id} {}
+          </div>
+          <div className="block mt-1 text-lg leading-tight font-medium text-black">
+            Occurencies: {gender?.count}
+          </div>
         </div>
       </div>
     );
