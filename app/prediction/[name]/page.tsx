@@ -10,6 +10,12 @@ interface Params {
 
 
 export default async function Page({ params }: Params) {
+
+    const genderData = getPredictedGender(params.name);
+
+    const [gender] = await Promise.all([
+      genderData
+    ]);
     return (
       <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start"> 
         { params.name }
