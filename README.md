@@ -4,6 +4,12 @@
 
 **NameInsider** is a Next.js application that predicts identity characteristics such as the most common **gender** and **nationality** based on a person's name. The project was built using **Next.js**, **TypeScript**, and **Tailwind CSS**, and focuses on exploring these technologies while offering a practical user experience.
 
+## Demo
+
+A demo is included, showcasing the main functionality of the **NameInsider** app. The demo highlights how users can input their name, view the predicted identity details (gender, most common nationality, occurencies).
+
+![name_insider](https://github.com/user-attachments/assets/94e09e34-a1fa-4280-9ab9-45f73f1c2bf1)
+
 ## Features
 
 - **Identity Prediction**: Users can input a name and get predictions for gender and nationality.
