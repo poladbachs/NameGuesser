@@ -10,7 +10,12 @@ export default function Home() {
         <h1>Enter Your Name</h1>
       </div>
       <form>
-        <input type="text" placeholder="Type your name..."/>
+        <input 
+          type="text" 
+          placeholder="Type your name..." 
+          value={inputVal}
+          onChange={(e) => setInputval(e.target.value)}
+        />
         <button type="submit">Predict Data</button>
       </form>
     </div>
