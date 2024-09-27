@@ -1,36 +1,34 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# NameGuesser
 
-## Getting Started
+## Project Overview
 
-First, run the development server:
+**NameGuesser** is a Next.js application that predicts identity characteristics such as the most common **gender** and **nationality** based on a person's name. The project was built using **Next.js**, **TypeScript**, and **Tailwind CSS**, and focuses on exploring these technologies while offering a practical user experience.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Features
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- **Identity Prediction**: Users can input a name and get predictions for gender and nationality.
+- **Real-time Data Fetching**: The app makes use of external APIs to fetch identity data in real-time.
+- **User-Friendly Interface**: Clean, responsive design for a seamless experience.
+- **Error Handling**: Displays clear error messages if the input field is left empty.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Technologies Used
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- **Next.js**
+- **TypeScript**
+- **Tailwind CSS**
+- **API Integration**: Genderize.io and Nationalize.io for fetching identity predictions.
 
-## Learn More
+## What I Did in This Project
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- Set up a Next.js application using `create-next-app`.
+- Understood the folder structure and routing system of Next.js.
+- Implemented both static and dynamic routes.
+- Used **Next.js Navigation** for smooth transitions between pages.
+- Worked with **Client and Server Components** in Next.js and transformed components into client components where necessary.
+- Fetched data asynchronously in **Server Components**.
+- Applied **TypeScript** throughout the project, including:
+  - Defining **strongly-typed interfaces** for props and route parameters (e.g., the `Params` interface for typed route params).
+  - Using **TypeScript’s type inference** to ensure accurate typing for API responses.
+  - Handling **async API calls** with TypeScript's `Promise` types.
+  - Ensuring **type safety** by safely accessing optional properties in API responses (e.g., `gender?.gender` and `country?.country[0].country_id`).
+- Wrote CSS using **Tailwind CSS** for rapid, responsive UI development.
