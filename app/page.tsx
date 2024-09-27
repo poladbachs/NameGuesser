@@ -1,7 +1,11 @@
 
 
 export default function Home() {
-  return (
-    <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start"></main>
+  return ( 
+    <div>
+      <div>
+        <h1>Enter Your Name</h1>
+      </div>
+    </div>
   );
 }
