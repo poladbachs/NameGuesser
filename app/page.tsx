@@ -1,12 +1,12 @@
 "use client";
 
-import { useState } from "react";
+import { useState, FormEvent } from "react";
 
 export default function Home() {
   const [inputVal, setInputval] = useState("");
 
-  const handleSubmit = () => {
-
+  const handleSubmit = (event: FormEvent) => {
+    event.preventDefault();
   }
   return ( 
     <div>
