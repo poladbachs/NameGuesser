@@ -1,8 +1,8 @@
-# NameGuesser
+# NameInsider
 
 ## Project Overview
 
-**NameGuesser** is a Next.js application that predicts identity characteristics such as the most common **gender** and **nationality** based on a person's name. The project was built using **Next.js**, **TypeScript**, and **Tailwind CSS**, and focuses on exploring these technologies while offering a practical user experience.
+**NameInsider** is a Next.js application that predicts identity characteristics such as the most common **gender** and **nationality** based on a person's name. The project was built using **Next.js**, **TypeScript**, and **Tailwind CSS**, and focuses on exploring these technologies while offering a practical user experience.
 
 ## Features
 
