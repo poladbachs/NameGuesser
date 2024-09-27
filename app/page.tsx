@@ -6,10 +6,18 @@ import { useRouter } from "next/navigation";
 
 export default function Home() {
   const [inputVal, setInputval] = useState("");
+  const [errorMessage, setErrorMessage] = useState("");
   const { push } = useRouter();
 
   const handleSubmit = (event: FormEvent) => {
     event.preventDefault();
+
+    if (inputVal === "") {
+      setErrorMessage("Input is required for submission."); 
+      return;
+    }
+    setErrorMessage("");
+
     push(`/prediction/${inputVal}`);
   };
 
@@ -45,6 +53,7 @@ export default function Home() {
             onChange={(e) => setInputval(e.target.value)}
             className="w-full p-2 border border-gray-300 rounded text-black"
           />
+          {errorMessage && <p className="text-red-500 text-sm">{errorMessage}</p>}
           <button
             type="submit"
             className="w-full py-2 px-4 bg-orange-500 hover:bg-orange-600 text-black font-semibold rounded-lg shadow-md focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75"
