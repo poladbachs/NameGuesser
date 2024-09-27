@@ -1,6 +1,7 @@
-
+import { useState } from "react";
 
 export default function Home() {
+  const [inputVal, setInputval] = useState("");
   return ( 
     <div>
       <div>
