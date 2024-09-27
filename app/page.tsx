@@ -43,7 +43,7 @@ export default function Home() {
 
       <div className="p-4 shadow-md bg-white rounded-md max-w-sm w-full mx-4">
         <h1 className="flex items-center justify-center text-2xl font-semibold mb-4 text-black">
-          Name Insights
+          Name Insider
         </h1>
         <form onSubmit={handleSubmit} className="space-y-3">
           <input
