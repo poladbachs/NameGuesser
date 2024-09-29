@@ -1,4 +1,4 @@
-# NameInsider
+# Name Insider
 
 ## Project Overview
 
